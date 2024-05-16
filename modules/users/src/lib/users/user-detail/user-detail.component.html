@@ -1,0 +1,9 @@
+<div>
+  @if (user$ | async; as user) {
+  <h2>{{ user.name }}</h2>
+  <img loading="lazy" [src]="user.avatar" [alt]="user.name" />
+  <p>ID: {{ user.id }}</p>
+  <p>Email: {{ user.email }}</p>
+  <p>Biografia: {{ user.biography }}</p>
+  }
+</div>
